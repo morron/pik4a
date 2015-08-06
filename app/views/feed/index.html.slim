@@ -1,0 +1,6 @@
+.row.panel
+  ul.clearing-thumbs.small-block-grid-1.large-block-grid-5 data-clearing=''
+    - @photos.each do |photo|
+      li
+        = link_to photo.src_big, class: 'th'
+          = image_tag photo.src
