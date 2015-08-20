@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require imagesloaded.pkgd.min
 //= require react
 //= require react_ujs
 //= require components
@@ -21,7 +22,11 @@
 $(function(){ $(document).foundation(); });
 
 $(function() {
-  $("#feed").masonry({
-    itemSelector: '#feed li'
-  });
+  $('#feed').imagesLoaded( function() {
+    $("#feed").masonry({
+      itemSelector: '#feed li'
+    });
+    $("#feed").append( $items )
+    .masonry( 'appended', $items );
+  })
 });
