@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
       user.name = auth["info"]["name"]
       user.photo_50 = auth["extra"]['raw_info']["photo_50"]
       user.photo_orig = auth["info"]['image']
-      user.url = auth['info']['urls']['Vkontakte']
+      user.url = auth['info']['urls']['Vkontakte']      
     end
   end
 end
