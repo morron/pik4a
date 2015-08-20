@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(version: 20150820220238) do
     t.string   "provider"
     t.string   "uid"
     t.string   "name"
+    t.string   "photo_50"
+    t.string   "photo_orig"
+    t.string   "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

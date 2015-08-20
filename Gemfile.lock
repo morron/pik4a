@@ -75,6 +75,10 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.2)
+    hirb (0.7.3)
+    hirb-unicode (0.0.5)
+      hirb (~> 0.5)
+      unicode-display_width (~> 0.1.1)
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -193,6 +197,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicode-display_width (0.1.1)
     vkontakte_api (1.4.3)
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9.1)
@@ -213,6 +218,8 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   dalli
   foundation-rails
+  hirb
+  hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
   omniauth

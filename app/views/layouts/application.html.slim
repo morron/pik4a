@@ -12,6 +12,24 @@ html lang="en"
     = csrf_meta_tag
 
   body
+    nav.top-bar data-topbar='' role='navigation'
+      ul.title-area
+        li.name
+          h1
+            = link_to 'pik4a', root_path
+      section.top-bar-section
+        ul.right
+          - if current_user
+            li
+              = image_tag current_user.photo_50, height: 45, width: 45
+            li
+              = link_to current_user.url, target: :blank do
+                = current_user.name
+            li.divider
+            li.has-form.show-for-large-up
+              = link_to 'Sign out', signout_path, class: 'button'
+          - else
+            li.has-form.show-for-large-up
+              = link_to "Sign In", "auth/vkontakte", class: 'button'
 
     == yield
-
