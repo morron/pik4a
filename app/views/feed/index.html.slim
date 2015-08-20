@@ -1,9 +1,9 @@
 .panel
   - if @photos
-    ul.clearing-thumbs.small-block-grid-1.large-block-grid-5 data-clearing=''
+    ul#feed.clearing-thumbs.small-block-grid-1.medium-block-grid-4.large-block-grid-6 data-clearing=''
       - @photos.each do |photo|
         li
-          = link_to photo.src_big, class: 'th'
+          = link_to photo.src_big
             = image_tag photo.src_big, width: 200, height: 200
   - else
     ' need to authorize

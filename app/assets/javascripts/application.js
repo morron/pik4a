@@ -19,3 +19,9 @@
 //= require components
 
 $(function(){ $(document).foundation(); });
+
+$(function() {
+  $("#feed").masonry({
+    itemSelector: '#feed li'
+  });
+});
