@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  get 'groups/index'
+
   root 'feed#index'
 
   resources :feed
+  resources :groups
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get '/signout', to: 'sessions#destroy'

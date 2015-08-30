@@ -15,6 +15,7 @@
 //= require foundation
 //= require turbolinks
 //= require imagesloaded.pkgd.min
+//= require underscore
 //= require react
 //= require react_ujs
 //= require components
